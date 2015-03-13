@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C13B5537-1169-493C-B34F-4469E391489A}</ProjectGuid>
+    <ProjectGuid>{08D0561B-51C6-4F5A-BD15-956F608EDCB7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InfoPanels</RootNamespace>
-    <AssemblyName>InfoPanels</AssemblyName>
+    <RootNamespace>ViceMayor</RootNamespace>
+    <AssemblyName>ViceMayor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\..\AppData\Local\Colossal Order\Cities_Skylines\Addons\Mods\InfoPanels\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,35 +32,24 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>H:\steamssd\SteamApps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ColossalManaged">
       <HintPath>H:\steamssd\SteamApps\common\Cities_Skylines\Cities_Data\Managed\ColossalManaged.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ICities">
       <HintPath>H:\steamssd\SteamApps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
       <HintPath>H:\steamssd\SteamApps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InfoPanels.cs" />
+    <Compile Include="DataModels\ElectricityProduction.cs" />
+    <Compile Include="Helpers\DistrictHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LICENSE.txt" />
-    <Content Include="THANKS.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ViceMayor\ViceMayor.csproj">
-      <Project>{08d0561b-51c6-4f5a-bd15-956f608edcb7}</Project>
-      <Name>ViceMayor</Name>
-    </ProjectReference>
+    <Compile Include="Util\DebugHelper.cs" />
+    <Compile Include="Util\Log.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

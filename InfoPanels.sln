@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoPanels", "InfoPanels\InfoPanels.csproj", "{C13B5537-1169-493C-B34F-4469E391489A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViceMayor", "ViceMayor\ViceMayor.csproj", "{08D0561B-51C6-4F5A-BD15-956F608EDCB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C13B5537-1169-493C-B34F-4469E391489A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13B5537-1169-493C-B34F-4469E391489A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13B5537-1169-493C-B34F-4469E391489A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D0561B-51C6-4F5A-BD15-956F608EDCB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D0561B-51C6-4F5A-BD15-956F608EDCB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D0561B-51C6-4F5A-BD15-956F608EDCB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D0561B-51C6-4F5A-BD15-956F608EDCB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

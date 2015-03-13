@@ -1,8 +1,8 @@
 ﻿using ColossalFramework.UI;
 using UnityEngine;
 using ICities;
-using InfoPanels.Helpers;
-using InfoPanels.Util;
+using ViceMayor.Helpers;
+using ViceMayor.Util;
 
 namespace InfoPanels
 {
@@ -20,14 +20,8 @@ namespace InfoPanels
 
     public class LoadedDetector : LoadingExtensionBase
     {
-        void LogWeirdNumber()
-        {
-            Log.Message("This number is something: " + DistrictHelper.SomeNumber);
-        }
         public override void OnLevelLoaded(LoadMode mode)
         {
-            
-
             //now we can run the UI drawing
             var uiView = GameObject.FindObjectOfType<UIView>();
             if (uiView == null) return;
@@ -42,10 +36,10 @@ namespace InfoPanels
             var button = buttonObject.GetComponent<UIButton>();
 
             // Set the text to show on the button.
-            button.text = "Click Me!";
+            button.text = "Print District Info";
 
             // Set the button dimensions.
-            button.width = 100;
+            button.width = 160;
             button.height = 30;
 
             // Style the button to look like a menu button.
@@ -62,7 +56,7 @@ namespace InfoPanels
 
             button.eventClick += delegate(UIComponent component, UIMouseEventParameter eventParam)
             {
-                LogWeirdNumber();
+                Log.Message(DebugHelper.RecursiveSerialize(DistrictHelper.CurrentDistrict));
             };
 
             // Place the button.
