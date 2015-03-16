@@ -5,3 +5,4 @@ More Specifically,
 https://gist.github.com/AlexanderDzhoganov/1dc4911976ae14ff4602 - Logging Class
 http://www.reddit.com/user/permutation - Mentioned Singleton<> at some point, ColossalFramework.UI Examples
 https://bitbucket.org/das7002/skymods - UI Examples
+https://github.com/brittanygh/CS-ChirpBanner - More complex UI Stuff
